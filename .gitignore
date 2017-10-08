@@ -105,3 +105,4 @@ include/
 share/
 bin/
 
+*.db
