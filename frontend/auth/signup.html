@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up! | Mentor4Life</title>
+        <link rel="stylesheet" type="text/css" href="/css/auth.css">
+        <script type="text/javascript" src="/third_party/jquery/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <form id="center" method="POST" action="/api/auth/signup">
+            <h1>Sign Up!</h1>
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="text" placeholder="Password" name="password" required>
+            <input type="text" placeholder="Confirm Password" name="cpassword" required>
+            <input type="text" placeholder="First Name" name="fname" required>
+            <input type="text" placeholder="Last Name" name="lname" required>
+            <input type="text" placeholder="Birth Date" name="birthdate" required>
+            <input type="text" placeholder="Gender" name="gender" required>
+            <input type="submit" value="Sign Up!" required>
+        </form>
+    </body>
+</html>
