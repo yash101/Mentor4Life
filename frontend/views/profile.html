@@ -10,13 +10,50 @@
     
     <body>
         <div id="header">
+            <a href="/views/dash.html" id="dash-icon">&nbsp;</a>
             <a href="javascript:void()" id="connections-icon">&nbsp;</a>
             <a href="javascript:void()" id="messenger-icon">&nbsp;</a>
             <a href="javascript:void()" id="notification-icon">&nbsp;</a>
-            <a href="javascript:void()" id="profile-icon">&nbsp;</a>
+            <a href="/views/profile.html" id="profile-icon">&nbsp;</a>
         </div>
         
         <div id="body">
+            <div id="holster">
+
+                <h1>Profile</h1>
+                
+                <div id="profile-pic">
+                    <div id="picture">&nbsp;</div>
+                </div>
+                
+                <h1>Education</h1>
+                
+                <div>
+                    <h3>Major:</h3>
+                    <input type="text" placeholder="Major" value="Computer Science">
+                    <h3>School:</h3>
+                    <input type="text" placeholder="School" value="Arizona State University">
+                    <h3>Subjects:</h3>
+                    <input type="text" placeholder="Subjects" value="CSE240, CSE230, CHM113">
+                </div>
+                
+                <h1>Skills & Interests</h1>
+                
+                <div>
+                    <h3>Skills</h3>
+                    <p>Please list your skills as key words, separated by a comma (,).</p>
+                    <textarea>Programming, Woodworking, Electronics, ...</textarea>
+
+                    <h3>Interests</h3>
+                    <p>Please list your skills as key words, separated by a comma (,).</p>
+                    <textarea>Medicine, Artificial Intelligence, Computer Algorithms, ...</textarea>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Update Profile!">
+                </div>
+                
             </div>
+        </div>
     </body>
 </html>

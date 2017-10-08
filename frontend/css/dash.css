@@ -36,6 +36,9 @@ body {
     background-color: #404040
 }
 
+#dash-icon {
+    background-image: url("/res/icons/ic_dashboard_white_48px.svg");
+}
 #connections-icon {
     background-image: url("/res/icons/ic_contacts_white_48px.svg");
 }
@@ -53,7 +56,6 @@ body {
     padding-top: 64px;
     text-align: center;
     background-color: turquoise;
-    min-height: 100vh;
 }
 
 #body > * {
@@ -70,6 +72,9 @@ body {
     margin: 16px;
 }
 
+#dash-icon-blk {
+    background-image: url("/res/icons/ic_dashboard_black_48px.svg");
+}
 #connections-icon-blk {
     background-image: url("/res/icons/ic_contacts_black_48px.svg");
 }

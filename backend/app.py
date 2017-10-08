@@ -32,12 +32,25 @@ def signup():
 @app.route('/api/v0/auth/login', methods=['POST'])
 def login():
     
-    return "Fail" # change when finished
+       if request.method == 'GET':
+        """return the information for <user_id>"""
+        .
+        .
+        .
+    if request.method == 'POST':
+        """modify/update the information for <user_id>"""
+        # you can use <user_id>, which is a str but could
+        # changed to be int or whatever you want, along
+        # with your lxml knowledge to make the required
+        # changes
+        data = request.form # a multidict containing POST data
+        .
+        .
 
 @app.route('/api/v0/auth/signout', methods=['POST', 'GET'])
 def signout():
     
-    return "Fail" # change when finished
+
 
 @app.route('/api/v0/nav/info', methods=['POST', 'GET'])
 def navinfo():
@@ -52,7 +65,7 @@ def getDashboardFunction(requested):
 @app.route('/api/v0/headshot/<int:width>/<int:height>', methods=['GET'])
 def getHeadshot(width, height):
     
-    return "Fail" # change when finished
+    return "/res/img/devyash_profile.jpg"
 
 @app.route('/api/v0/headshot', methods=['POST', 'GET'])
 def getUpdateHeadshot():

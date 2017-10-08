@@ -36,6 +36,9 @@ body {
     background-color: #404040
 }
 
+#dash-icon {
+    background-image: url("/res/icons/ic_dashboard_white_48px.svg");
+}
 #connections-icon {
     background-image: url("/res/icons/ic_contacts_white_48px.svg");
 }
@@ -50,8 +53,79 @@ body {
 }
 
 #body {
-    padding-top: 64px;
     text-align: center;
     background-color: turquoise;
     min-height: 100vh;
+    padding-bottom: 32px;
+}
+
+#body > #holster {
+    display: inline-block;
+    width: 80vw;
+    max-width: 800px;
+}
+
+#holster > * {
+    display: block;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(198,198,198,1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(198,198,198,1);
+    box-shadow: 3px 3px 0px 0px rgba(198,198,198,1);
+    padding: 16px;
+}
+
+#holster > div {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+#holster > h1 {
+    padding: 24px;
+}
+
+#holster h3 {
+    text-align: left;
+}
+
+#profile-pic {
+    text-align: center;
+    padding: 32px;
+    background-color: white;
+}
+
+#profile-pic > #picture {
+    width: 50vw;
+    height: 50vw;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 8px solid #C6C6C6;
+    display: inline-block;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("/res/img/devyash_profile_cropped.jpg");
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid #C6C6C6;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+input:active,
+input:hover,
+input:focus,
+textarea:active,
+textarea:hover,
+textarea:focus {
+    background-color: #edfff0;
+    border: 2px solid #404040;
 }
