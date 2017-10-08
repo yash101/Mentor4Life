@@ -1,11 +1,11 @@
 #!/bin/bash
 
-pushd backend
-python3 app.py &
+pushd frontend
+php -S 0.0.0.0:3003 &
 popd
 
-pushd frontend
-php -S 0.0.0.0:3003
+pushd backend
+python3 app.py
 popd
 
 kill %%

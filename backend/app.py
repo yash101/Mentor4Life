@@ -2,7 +2,7 @@ import sqlite3
 import os
 import sys
 from flask import g
-from flask import Flask
+from flask import Flask, redirect
 
 app = Flask(__name__)
 
@@ -27,29 +27,15 @@ def index():
 
 @app.route('/api/v0/auth/signup', methods=['POST'])
 def signup():
-    return "Fail" # change when finised
+    return redirect("/views/dash.html", code=302)
 
 @app.route('/api/v0/auth/login', methods=['POST'])
 def login():
-    
-       if request.method == 'GET':
-        """return the information for <user_id>"""
-        .
-        .
-        .
-    if request.method == 'POST':
-        """modify/update the information for <user_id>"""
-        # you can use <user_id>, which is a str but could
-        # changed to be int or whatever you want, along
-        # with your lxml knowledge to make the required
-        # changes
-        data = request.form # a multidict containing POST data
-        .
-        .
+    return redirect("/views/dash.html", code=302)
 
 @app.route('/api/v0/auth/signout', methods=['POST', 'GET'])
 def signout():
-    
+    pass
 
 
 @app.route('/api/v0/nav/info', methods=['POST', 'GET'])

@@ -72,6 +72,22 @@ body {
     margin: 16px;
 }
 
+#body > #title {
+    display: block;
+    width: initial;
+    height: initial;
+    max-width: initial;
+    max-height: initial;
+    background-color: inherit;
+    text-align: center;
+}
+
+#body > #title > h1 {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+}
+
 #dash-icon-blk {
     background-image: url("/res/icons/ic_dashboard_black_48px.svg");
 }
