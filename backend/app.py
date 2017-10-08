@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import sys
 from flask import g
 from flask import Flask
 
@@ -8,16 +9,24 @@ app = Flask(__name__)
 database_path = "../database.sqlite3.db"
 
 
+def get_db():
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = sqlite3.connect(database_path)
+    return db
+
+@app.teardown_appcontext
+def close_connection(exception):
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close() 
 
 @app.route('/')
 def index():
     return "Web API is not available for use without the frontend"
 
-
-
 @app.route('/api/v0/auth/signup', methods=['POST'])
 def signup():
-    
     return "Fail" # change when finised
 
 @app.route('/api/v0/auth/login', methods=['POST'])

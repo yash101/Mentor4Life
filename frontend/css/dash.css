@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    display: block;
+    margin: 0px;
+    padding: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: black;
+    text-align: center;
+}
+
+#header a,
+#header a:visited {
+    text-decoration: none;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#header a:hover,
+#header a:active {
+    background-color: #404040
+}
+
+#connections-icon {
+    background-image: url("/res/icons/ic_contacts_white_48px.svg");
+}
+#messenger-icon {
+    background-image: url("/res/icons/ic_chat_white_48px.svg");
+}
+#notification-icon {
+    background-image: url("/res/icons/ic_notifications_white_48px.svg");
+}
+#profile-icon {
+    background-image: url("/res/icons/ic_person_white_48px.svg");
+}
+
+#body {
+    padding-top: 64px;
+    text-align: center;
+    background-color: turquoise;
+    min-height: 100vh;
+}
+
+#body > * {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    max-width: 90vw;
+    max-height: 90vw;
+    min-height: 30px;
+    background-color: white;
+    padding: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 16px;
+}
+
+#connections-icon-blk {
+    background-image: url("/res/icons/ic_contacts_black_48px.svg");
+}
+#messenger-icon-blk {
+    background-image: url("/res/icons/ic_chat_black_48px.svg");
+}
+#notification-icon-blk {
+    background-image: url("/res/icons/ic_notifications_black_48px.svg");
+}
+#profile-icon-blk {
+    background-image: url("/res/icons/ic_person_black_48px.svg");
+}
+.dash-icons-blk:hover {
+    background-color: #C6C6C6 !important;
+}
